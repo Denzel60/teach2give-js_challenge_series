@@ -163,3 +163,23 @@ function greater(num1, num2, num3){
 console.log(greater(2, 35, 9));
 console.log(greater(23, 23, 23));
 
+// Less among the three
+// Write a function called least that takes in three numbers as arguments and returns the least among the three. If they are all equal, it should return any of them.
+// Examples:
+
+// least(2, 35, 9) returns 2
+// least(23, 23, 23) returns 23
+
+function least(num1, num2, num3){
+    if (num1 < num2 && num1 < num3) {
+        return num1;
+    } else if (num2 < num1 && num2 < num3){
+        return num2;
+    } else if (num3 < num1 && num3 < num2){
+        return num3;
+    } else {
+        return num1;
+    }
+}
+console.log(least(2, 35, 9));
+console.log(least(23, 23, 23));
