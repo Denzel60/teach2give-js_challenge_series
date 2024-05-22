@@ -109,3 +109,14 @@ console.log(basketBallPoints(0,5));
 // isSumLessThan100(25, 55) returns false
 // isSumLessThan100(72, 38) returns true
 
+function isSumLessThan100(num1, num2){
+    let sum = num1 + num2;
+    if (sum > 100) {
+        console.log("true")
+    } else {
+        console.log("false")
+    }
+}
+isSumLessThan100(25, 55);
+isSumLessThan100(72, 38);
+
