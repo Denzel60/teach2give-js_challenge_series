@@ -200,3 +200,21 @@ function footballPoints(won, drawn, lost){
 footballPoints(5, 0, 2);
 footballPoints(0, 0, 2);
 footballPoints(5, 2, 0);
+
+// Even numbers
+// Write a function called isEven that takes in a number as an argument, the function returns true if a number is even and returns false 
+// if a number is odd. Use this function to log to the console all the even numbers between 0 and 101.
+function isEven(number) {
+    return number % 2 === 0;
+}
+
+function logEvenNumbers() {
+    for (let i = 0; i <= 101; i++) {
+        if (isEven(i)) {
+            console.log(i);
+        }
+    }
+}
+
+// Call the function to log even numbers
+logEvenNumbers();
