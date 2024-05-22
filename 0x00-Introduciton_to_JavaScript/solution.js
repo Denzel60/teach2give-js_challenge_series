@@ -120,3 +120,24 @@ function isSumLessThan100(num1, num2){
 isSumLessThan100(25, 55);
 isSumLessThan100(72, 38);
 
+// Convert minutes to second
+// Given that 1 minute is equal to 60 seconds. Write a function called convertToSeconds that takes in the number of minutes as an arguments and returns the seconds equivalent in the format x seconds e.g 120 seconds, 300 seconds. e.t.c. If the seconds equivalent is 0, then it should just return 0, if the seconds equivalent is 1, then it should return 1, if the seconds equivalent is more than 1, then it should return with the string "seconds"
+// Examples:
+
+// convertToSeconds(5) returns 300 seconds
+// convertToSeconds(0) returns 0
+// convertToSeconds(1) returns 1 second (singular)
+
+function convertToSeconds(minutes){
+    convert = minutes * 60;
+    if (convert === 0) {
+        return 0;
+    } else if (convert === 1){
+        return `${convert} second`;
+    } else if (convert > 1) {
+        return convert + " seconds";
+    }
+}
+console.log(convertToSeconds(5));
+console.log(convertToSeconds(0));
+console.log(convertToSeconds(1/60));
