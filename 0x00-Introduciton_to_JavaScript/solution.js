@@ -183,3 +183,20 @@ function least(num1, num2, num3){
 }
 console.log(least(2, 35, 9));
 console.log(least(23, 23, 23));
+
+// Football points
+// Write a function called footballPoints that returns the number of points a football team has obtained so far, the first argument for this function is the number of games a team has won, the second argument is the number of games the team has drawn and the third arguement is the number of times the team has lost. 3 points are awarded for every game won, 1 point for every game draw and 0 points for every game lost.
+// Examples:
+
+// footballPoints(5, 0, 2) returns 15
+// footballPoints(0, 0, 2) returns 0
+// footballPoints(5, 2, 0) returns 17
+
+function footballPoints(won, drawn, lost){
+    result = (won * 3) + (drawn * 1) + (lost * 0)
+    console.log(result); 
+}
+
+footballPoints(5, 0, 2);
+footballPoints(0, 0, 2);
+footballPoints(5, 2, 0);
