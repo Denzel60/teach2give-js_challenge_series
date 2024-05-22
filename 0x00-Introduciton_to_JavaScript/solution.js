@@ -141,3 +141,25 @@ function convertToSeconds(minutes){
 console.log(convertToSeconds(5));
 console.log(convertToSeconds(0));
 console.log(convertToSeconds(1/60));
+
+// Greater among the three
+// Write a function called greater that takes in three numbers as arguments and returns the greatest number among the three. If they are all equal, it should return any of them.
+// Examples:
+
+// greater(2, 35, 9) returns 35
+// greater(23, 23, 23) returns 23
+
+function greater(num1, num2, num3){
+    if (num1 > num2 && num1 > num3) {
+        return num1;
+    } else if(num2 > num1 && num2 > num3){
+        return num2;
+    } else if(num3 > num1 && num3 && num2){
+        return num3;
+    } else if (num1 == num2 && num1 == num3 && num2 == num3){
+        return num1;
+    }
+}
+console.log(greater(2, 35, 9));
+console.log(greater(23, 23, 23));
+
